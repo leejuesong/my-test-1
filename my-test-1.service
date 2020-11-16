@@ -1,0 +1,10 @@
+[Unit]
+Description=test echo system
+After=network.target
+ 
+[Service]
+Type=simple
+ExecStart=/home/ec2-user/dsm-agent-sample/test.sh
+ 
+RestartSec=5
+Restart=always
